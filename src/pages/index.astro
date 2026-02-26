@@ -1,0 +1,72 @@
+---
+// --- 前端變數設定區 ---
+const vpName = "馬遠榮副校長";
+const title = "量子力學與奈米科學研究專家";
+---
+
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{vpName} - 個人學術網頁</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    
+    <script is:inline defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script is:inline defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+  </head>
+  
+  <body class="bg-slate-100 p-6 md:p-12 font-sans text-slate-900">
+    
+    <main class="max-w-4xl mx-auto bg-white rounded-[2rem] shadow-2xl overflow-hidden border-t-[12px] border-blue-900">
+      
+      <header class="p-10 text-center border-b border-gray-100 bg-gradient-to-b from-white to-blue-50">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-3 tracking-tight">
+          {vpName}
+        </h1>
+        <p class="text-xl text-gray-600 font-medium">{title}</p>
+        <div class="mt-6 inline-flex gap-2">
+          <span class="px-4 py-1 bg-blue-100 text-blue-800 text-sm font-semibold rounded-full">Top 1% 高被引學者</span>
+          <span class="px-4 py-1 bg-green-100 text-green-800 text-sm font-semibold rounded-full">ESG 推動者</span>
+        </div>
+      </header>
+
+      <section class="p-10">
+        <div class="bg-blue-900 rounded-3xl p-8 text-white shadow-inner relative overflow-hidden">
+          <div class="absolute top-0 right-0 -mt-10 -mr-10 text-blue-800 opacity-20 text-9xl font-serif leading-none select-none">
+            ∫
+          </div>
+          
+          <h2 class="text-2xl font-bold mb-8 flex items-center relative z-10">
+            <span class="bg-blue-500 w-2 h-8 mr-3 rounded-full"></span>
+            物理學的基石：馬克士威方程組
+          </h2>
+
+          <div class="space-y-8 text-center relative z-10">
+            
+            <div class="text-3xl md:text-4xl py-2" set:text={String.raw`$$ \nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0} $$`}></div>
+            <p class="text-blue-200 text-sm mb-6">高斯電場定律 (Gauss's law)</p>
+
+            <div class="text-3xl md:text-4xl py-2 border-t border-blue-800 pt-6" set:text={String.raw`$$ \nabla \cdot \mathbf{B} = 0 $$`}></div>
+            <p class="text-blue-200 text-sm mb-6">高斯磁場定律 (Gauss's law for magnetism)</p>
+
+            <div class="text-3xl md:text-4xl py-2 border-t border-blue-800 pt-6" set:text={String.raw`$$ \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} $$`}></div>
+            <p class="text-blue-200 text-sm mb-6">法拉第電磁感應定律 (Faraday's law of induction)</p>
+
+            <div class="text-3xl md:text-4xl py-2 border-t border-blue-800 pt-6" set:text={String.raw`$$ \nabla \times \mathbf{B} = \mu_0\left(\mathbf{J} + \varepsilon_0\frac{\partial \mathbf{E}}{\partial t}\right) $$`}></div>
+            <p class="text-blue-200 text-sm">安培定律 (含馬克士威修正項) (Ampère's circuital law)</p>
+
+          </div>
+        </div>
+         <p class="text-center text-gray-500 text-sm mt-6">
+          ※ 本區塊公式由 LaTeX 引擎即時渲染，展現極致學術排版工藝。
+        </p>
+      </section>
+
+      <footer class="p-6 text-center text-gray-400 text-sm bg-gray-50 border-t border-gray-100">
+        © 2026 {vpName} 研究室 | Powered by Astro & Tailwind CSS
+      </footer>
+
+    </main>
+  </body>
+</html>
