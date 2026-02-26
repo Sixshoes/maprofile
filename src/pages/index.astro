@@ -17,10 +17,33 @@ import Layout from '../layouts/Layout.astro';
 				<span class="text-gradient">馬副</span> 的研究空間
 			</h1>
 
-			<p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
-				這裡記錄了關於 <span class="text-white font-semibold">MAPROFILE</span> 專案的核心進展。<br />
-				專注於資料分析、學術研究與現代化網頁技術的整合實踐。
-			</p>
+		<section class="mt-12 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
+		<h2 class="text-2xl font-bold text-brand-primary mb-6 flex items-center">
+			<span class="mr-2">⚡</span> 物理之美：馬克士威方程組
+		</h2>
+		
+		<div class="space-y-6 text-gray-300 font-mono text-lg">
+			<div class="p-4 bg-black/20 rounded-lg border-l-4 border-blue-500">
+			<p class="text-sm text-blue-400 mb-1">// Gauss's Law</p>
+			<code>∇ · E = ρ / ε₀</code>
+			</div>
+			
+			<div class="p-4 bg-black/20 rounded-lg border-l-4 border-green-500">
+			<p class="text-sm text-green-400 mb-1">// Gauss's Law for Magnetism</p>
+			<code>∇ · B = 0</code>
+			</div>
+			
+			<div class="p-4 bg-black/20 rounded-lg border-l-4 border-yellow-500">
+			<p class="text-sm text-yellow-400 mb-1">// Faraday's Law</p>
+			<code>∇ × E = -∂B / ∂t</code>
+			</div>
+			
+			<div class="p-4 bg-black/20 rounded-lg border-l-4 border-purple-500">
+			<p class="text-sm text-purple-400 mb-1">// Ampère's Law</p>
+			<code>∇ × B = μ₀(J + ε₀ ∂E / ∂t)</code>
+			</div>
+		</div>
+		</section>
 
 			<div class="flex flex-wrap justify-center gap-6">
 				<a href="/projects" class="group px-10 py-4 bg-white text-brand-dark font-black rounded-2xl hover:bg-brand-primary hover:text-white transition-all shadow-xl flex items-center gap-2">
