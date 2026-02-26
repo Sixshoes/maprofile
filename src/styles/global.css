@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-brand-dark text-slate-200 antialiased;
+}
+
+.katex-display {
+  @apply my-8 p-6 bg-white/5 border border-white/10 rounded-2xl overflow-x-auto shadow-inner;
+  color: #93c5fd;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400;
+}
