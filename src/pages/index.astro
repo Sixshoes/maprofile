@@ -3,74 +3,94 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Maprofile | 馬副的研究空間">
-  <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-20">
+  <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-16 px-6">
+    
     <div class="absolute -top-20 -left-20 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[120px] animate-blob"></div>
     <div class="absolute top-40 -right-20 w-[350px] h-[350px] bg-emerald-600/10 rounded-full blur-[100px] animate-blob [animation-delay:2s]"></div>
 
-    <div class="max-w-4xl mx-auto px-6 relative w-full">
-      <div class="flex justify-center mb-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1 text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase bg-blue-500/5 border border-blue-500/20 rounded-full backdrop-blur-sm">
-          Academic & Technology Profile
-        </div>
+    <div class="max-w-4xl mx-auto relative w-full text-center">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 mb-6 text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase bg-blue-500/5 border border-blue-500/20 rounded-full">
+        學術與科技研究個人檔案
       </div>
 
-      <div class="text-center mb-12">
-        <h1 class="text-4xl md:text-6xl font-serif font-black text-white mb-6 leading-tight tracking-tight">
-          歡迎來到 <br />
-          <span class="text-gradient">馬副</span> 的研究空間
-        </h1>
-        <p class="text-slate-400 max-w-xl mx-auto text-sm leading-relaxed">
-          專注於科學計算與社會實踐，在數據與永續發展之間尋找交集。
-        </p>
-      </div>
+      <h1 class="text-4xl md:text-5xl font-serif font-black text-white mb-6 leading-tight">
+        歡迎來到 <span class="text-gradient">馬副</span> 的研究空間
+      </h1>
+      <p class="text-slate-400 max-w-lg mx-auto text-sm mb-12 leading-relaxed">
+        專注於科學計算與社會實踐，在數據與永續發展之間尋找跨學科的交集。
+      </p>
 
-      <section class="relative group mb-12">
-        <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-2xl blur-sm opacity-50 group-hover:opacity-100 transition duration-1000"></div>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 text-left">
         
-        <div class="relative bg-slate-950/50 backdrop-blur-2xl border border-white/10 p-6 md:p-8 rounded-2xl shadow-2xl">
-          <div class="flex items-end justify-between mb-6 border-b border-white/5 pb-4">
-            <div>
-              <h2 class="text-xl font-bold text-white tracking-widest italic opacity-80">
-                MAXWELL'S EQUATIONS
-              </h2>
-              <p class="text-[9px] text-slate-500 font-mono mt-1 uppercase tracking-[0.3em]">Fundamental Field Theory</p>
-            </div>
-            <div class="text-[10px] text-blue-400 font-mono opacity-50">PHYSICS.LOG</div>
+        <div class="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-blue-500/50 hover:bg-blue-500/[0.05] transition-all duration-500 cursor-help">
+          <div class="flex justify-between items-start mb-4">
+            <span class="text-[10px] text-blue-400 font-black tracking-widest uppercase">Gauss's Law</span>
+            <span class="text-[10px] text-slate-500 font-mono">01</span>
           </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="p-4 rounded-lg bg-white/[0.02] border border-white/5">
-              <span class="text-[9px] text-blue-400/70 font-bold tracking-widest uppercase">Gauss's Law</span>
-              <div class="mt-1 text-lg font-serif text-slate-200">∇ · E = ρ / ε₀</div>
-            </div>
-
-            <div class="p-4 rounded-lg bg-white/[0.02] border border-white/5">
-              <span class="text-[9px] text-green-400/70 font-bold tracking-widest uppercase">Gauss's Magnetism</span>
-              <div class="mt-1 text-lg font-serif text-slate-200">∇ · B = 0</div>
-            </div>
-
-            <div class="p-4 rounded-lg bg-white/[0.02] border border-white/5">
-              <span class="text-[9px] text-yellow-400/70 font-bold tracking-widest uppercase">Faraday's Law</span>
-              <div class="mt-1 text-lg font-serif text-slate-200">∇ × E = − ∂B / ∂t</div>
-            </div>
-
-            <div class="p-4 rounded-lg bg-white/[0.02] border border-white/5">
-              <span class="text-[9px] text-purple-400/70 font-bold tracking-widest uppercase">Ampère-Maxwell</span>
-              <div class="mt-1 text-lg font-serif text-slate-200 text-[0.95rem]">∇ × B = μ₀(J + ε₀ ∂E / ∂t)</div>
-            </div>
+          <h3 class="text-white font-bold mb-2">高斯定律</h3>
+          <div class="text-xl font-serif text-slate-100 group-hover:scale-110 transition-transform duration-500 origin-left">
+            ∇ · E = ρ / ε₀
+          </div>
+          <div class="mt-4 text-xs text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 leading-relaxed border-t border-white/5 pt-3">
+            描述電荷如何產生電場。電場線從正電荷出發，終止於負電荷。
           </div>
         </div>
+
+        <div class="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-green-500/50 hover:bg-green-500/[0.05] transition-all duration-500 cursor-help">
+          <div class="flex justify-between items-start mb-4">
+            <span class="text-[10px] text-green-400 font-black tracking-widest uppercase">Gauss's Law for Magnetism</span>
+            <span class="text-[10px] text-slate-500 font-mono">02</span>
+          </div>
+          <h3 class="text-white font-bold mb-2">高斯磁定律</h3>
+          <div class="text-xl font-serif text-slate-100 group-hover:scale-110 transition-transform duration-500 origin-left">
+            ∇ · B = 0
+          </div>
+          <div class="mt-4 text-xs text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 leading-relaxed border-t border-white/5 pt-3">
+            說明自然界中不存在磁單極（磁鐵一定有南北極）。磁場線永遠是封閉迴圈。
+          </div>
+        </div>
+
+        <div class="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-yellow-500/50 hover:bg-yellow-500/[0.05] transition-all duration-500 cursor-help">
+          <div class="flex justify-between items-start mb-4">
+            <span class="text-[10px] text-yellow-400 font-black tracking-widest uppercase">Faraday's Law</span>
+            <span class="text-[10px] text-slate-500 font-mono">03</span>
+          </div>
+          <h3 class="text-white font-bold mb-2">法拉第感應定律</h3>
+          <div class="text-xl font-serif text-slate-100 group-hover:scale-110 transition-transform duration-500 origin-left">
+            ∇ × E = − ∂B / ∂t
+          </div>
+          <div class="mt-4 text-xs text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 leading-relaxed border-t border-white/5 pt-3">
+            描述變化的磁場如何產生感應電場。這是發電機運作的核心原理。
+          </div>
+        </div>
+
+        <div class="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-purple-500/50 hover:bg-purple-500/[0.05] transition-all duration-500 cursor-help">
+          <div class="flex justify-between items-start mb-4">
+            <span class="text-[10px] text-purple-400 font-black tracking-widest uppercase">Ampère-Maxwell Law</span>
+            <span class="text-[10px] text-slate-500 font-mono">04</span>
+          </div>
+          <h3 class="text-white font-bold mb-2">安培-馬克士威定律</h3>
+          <div class="text-xl font-serif text-slate-100 group-hover:scale-110 transition-transform duration-500 origin-left">
+            ∇ × B = μ₀(J + ε₀ ∂E / ∂t)
+          </div>
+          <div class="mt-4 text-xs text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 leading-relaxed border-t border-white/5 pt-3">
+            描述電流與變化的電場如何產生磁場。這解釋了電磁波如何在真空傳播。
+          </div>
+        </div>
+
       </section>
 
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="/projects" class="group px-8 py-3 bg-white text-slate-900 font-bold rounded-xl hover:scale-105 transition-all flex items-center justify-center gap-2 text-sm">
+        <a href="/projects" class="group px-8 py-3 bg-white text-slate-900 font-bold rounded-xl hover:scale-105 transition-all flex items-center justify-center gap-2">
           探索研究成果
           <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
         </a>
-        <a href="/posts" class="px-8 py-3 bg-white/5 border border-white/10 text-white font-bold rounded-xl hover:bg-white/10 transition-all backdrop-blur-sm text-sm text-center">
+        <a href="/posts" class="px-8 py-3 bg-white/5 border border-white/10 text-white font-bold rounded-xl hover:bg-white/10 transition-all backdrop-blur-sm">
           閱讀日誌
         </a>
       </div>
+
     </div>
   </section>
 </Layout>
