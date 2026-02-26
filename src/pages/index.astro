@@ -2,82 +2,75 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Maprofile | 馬副的個人網站">
-	<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-		<div class="absolute -top-20 -left-20 w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[120px] animate-blob"></div>
-		<div class="absolute top-40 -right-20 w-[350px] h-[350px] bg-emerald-600/20 rounded-full blur-[100px] animate-blob [animation-delay:2s]"></div>
+<Layout title="Maprofile | 馬副的研究空間">
+  <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-20">
+    <div class="absolute -top-20 -left-20 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[120px] animate-blob"></div>
+    <div class="absolute top-40 -right-20 w-[350px] h-[350px] bg-emerald-600/10 rounded-full blur-[100px] animate-blob [animation-delay:2s]"></div>
 
-		<div class="max-w-5xl mx-auto px-6 text-center relative">
-			<div class="inline-flex items-center gap-2 px-4 py-2 mb-8 text-xs font-bold tracking-widest text-brand-primary uppercase bg-blue-500/10 rounded-full border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
-				Academic & Technology Profile
-			</div>
+    <div class="max-w-4xl mx-auto px-6 relative w-full">
+      <div class="flex justify-center mb-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase bg-blue-500/5 border border-blue-500/20 rounded-full backdrop-blur-sm">
+          Academic & Technology Profile
+        </div>
+      </div>
 
-			<h1 class="text-6xl md:text-8xl font-serif font-black text-white mb-8 leading-[1.1]">
-				歡迎來到 <br />
-				<span class="text-gradient">馬副</span> 的研究空間
-			</h1>
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-6xl font-serif font-black text-white mb-6 leading-tight tracking-tight">
+          歡迎來到 <br />
+          <span class="text-gradient">馬副</span> 的研究空間
+        </h1>
+        <p class="text-slate-400 max-w-xl mx-auto text-sm leading-relaxed">
+          專注於科學計算與社會實踐，在數據與永續發展之間尋找交集。
+        </p>
+      </div>
 
-		<section class="mt-16 relative group">
-		<div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-		
-		<div class="relative bg-slate-900/80 backdrop-blur-xl border border-white/10 p-8 rounded-2xl shadow-2xl">
-			<div class="flex items-center justify-between mb-8">
-			<div>
-				<h2 class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 tracking-tighter italic">
-				MAXWELL'S EQUATIONS
-				</h2>
-				<p class="text-xs text-slate-500 font-mono mt-1 uppercase tracking-widest">Classical Electrodynamics Foundation</p>
-			</div>
-			<div class="h-10 w-10 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-			</div>
-			</div>
+      <section class="relative group mb-12">
+        <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-2xl blur-sm opacity-50 group-hover:opacity-100 transition duration-1000"></div>
+        
+        <div class="relative bg-slate-950/50 backdrop-blur-2xl border border-white/10 p-6 md:p-8 rounded-2xl shadow-2xl">
+          <div class="flex items-end justify-between mb-6 border-b border-white/5 pb-4">
+            <div>
+              <h2 class="text-xl font-bold text-white tracking-widest italic opacity-80">
+                MAXWELL'S EQUATIONS
+              </h2>
+              <p class="text-[9px] text-slate-500 font-mono mt-1 uppercase tracking-[0.3em]">Fundamental Field Theory</p>
+            </div>
+            <div class="text-[10px] text-blue-400 font-mono opacity-50">PHYSICS.LOG</div>
+          </div>
 
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-			<div class="group/item p-6 rounded-xl bg-white/5 border border-white/5 hover:border-blue-500/50 transition-all duration-300">
-				<span class="text-[10px] text-blue-500 font-bold tracking-widest uppercase">Gauss's Law</span>
-				<div class="mt-2 text-2xl font-serif text-slate-100 flex items-center justify-center min-h-[60px]">
-				∇ · E = ρ / ε₀
-				</div>
-			</div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 rounded-lg bg-white/[0.02] border border-white/5">
+              <span class="text-[9px] text-blue-400/70 font-bold tracking-widest uppercase">Gauss's Law</span>
+              <div class="mt-1 text-lg font-serif text-slate-200">∇ · E = ρ / ε₀</div>
+            </div>
 
-			<div class="group/item p-6 rounded-xl bg-white/5 border border-white/5 hover:border-green-500/50 transition-all duration-300">
-				<span class="text-[10px] text-green-500 font-bold tracking-widest uppercase">Gauss's Law for Magnetism</span>
-				<div class="mt-2 text-2xl font-serif text-slate-100 flex items-center justify-center min-h-[60px]">
-				∇ · B = 0
-				</div>
-			</div>
+            <div class="p-4 rounded-lg bg-white/[0.02] border border-white/5">
+              <span class="text-[9px] text-green-400/70 font-bold tracking-widest uppercase">Gauss's Magnetism</span>
+              <div class="mt-1 text-lg font-serif text-slate-200">∇ · B = 0</div>
+            </div>
 
-			<div class="group/item p-6 rounded-xl bg-white/5 border border-white/5 hover:border-yellow-500/50 transition-all duration-300">
-				<span class="text-[10px] text-yellow-500 font-bold tracking-widest uppercase">Faraday's Law of Induction</span>
-				<div class="mt-2 text-2xl font-serif text-slate-100 flex items-center justify-center min-h-[60px]">
-				∇ × E = − ∂B / ∂t
-				</div>
-			</div>
+            <div class="p-4 rounded-lg bg-white/[0.02] border border-white/5">
+              <span class="text-[9px] text-yellow-400/70 font-bold tracking-widest uppercase">Faraday's Law</span>
+              <div class="mt-1 text-lg font-serif text-slate-200">∇ × E = − ∂B / ∂t</div>
+            </div>
 
-			<div class="group/item p-6 rounded-xl bg-white/5 border border-white/5 hover:border-purple-500/50 transition-all duration-300">
-				<span class="text-[10px] text-purple-500 font-bold tracking-widest uppercase">Ampère-Maxwell Law</span>
-				<div class="mt-2 text-2xl font-serif text-slate-100 flex items-center justify-center min-h-[60px]">
-				∇ × B = μ₀(J + ε₀ ∂E / ∂t)
-				</div>
-			</div>
-			</div>
-			
-			<div class="mt-8 pt-6 border-t border-white/5 text-center">
-			<p class="text-[10px] text-slate-600 font-mono">MAPROFILE SCIENTIFIC COMPUTING | CENTER FOR SOCIAL PRACTICE</p>
-			</div>
-		</div>
-		</section>
+            <div class="p-4 rounded-lg bg-white/[0.02] border border-white/5">
+              <span class="text-[9px] text-purple-400/70 font-bold tracking-widest uppercase">Ampère-Maxwell</span>
+              <div class="mt-1 text-lg font-serif text-slate-200 text-[0.95rem]">∇ × B = μ₀(J + ε₀ ∂E / ∂t)</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<div class="flex flex-wrap justify-center gap-6">
-				<a href="/projects" class="group px-10 py-4 bg-white text-brand-dark font-black rounded-2xl hover:bg-brand-primary hover:text-white transition-all shadow-xl flex items-center gap-2">
-					探索研究成果
-					<span class="group-hover:translate-x-1 transition-transform">→</span>
-				</a>
-				<a href="/posts" class="px-10 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-2xl hover:bg-white/10 transition-all backdrop-blur-sm">
-					閱讀日誌
-				</a>
-			</div>
-		</div>
-	</section>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/projects" class="group px-8 py-3 bg-white text-slate-900 font-bold rounded-xl hover:scale-105 transition-all flex items-center justify-center gap-2 text-sm">
+          探索研究成果
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </a>
+        <a href="/posts" class="px-8 py-3 bg-white/5 border border-white/10 text-white font-bold rounded-xl hover:bg-white/10 transition-all backdrop-blur-sm text-sm text-center">
+          閱讀日誌
+        </a>
+      </div>
+    </div>
+  </section>
 </Layout>
